@@ -121,7 +121,7 @@
         <li class="ti-new-tag-input-wrapper">
           <input
             ref="newTagInput"
-            v-bind="$attrs"
+            v-bind="attrs"
             :class="[createClasses(newTag, tags, validation, isDuplicate)]"
             :placeholder="placeholder"
             :value="newTag"

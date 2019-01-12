@@ -23,6 +23,9 @@ export default {
     };
   },
   computed: {
+    attrs() {
+      return this.$attrs;
+    },
     // Property which calculates if the autocomplete should be opened or not
     autocompleteOpen() {
       if (this.autocompleteAlwaysOpen) return true;
