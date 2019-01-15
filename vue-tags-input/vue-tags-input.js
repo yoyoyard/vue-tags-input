@@ -31,8 +31,8 @@ export default {
       if (this.autocompleteAlwaysOpen) return true;
       return this.newTag !== null
         && this.newTag.length >= this.autocompleteMinLength
-        && this.filteredAutocompleteItems.length > 0
-        && this.focused;
+        && this.filteredAutocompleteItems.length > 0;
+      // && this.focused;
     },
     // Returns validated autocomplete items. Maybe duplicates are filtered out
     filteredAutocompleteItems() {
